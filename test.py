@@ -1,9 +1,13 @@
 import time
 import os
 
+#
+### Questionaire
+#
+
 def choice():
     while True:
-        print("Do you want to play a game?")
+        print("Are you gay?")
         print("1. Yes")
         print("2. No")
         try:
@@ -15,20 +19,27 @@ def choice():
         except ValueError:
             print("Invalid input. Please enter a number (1 or 2).\n")
 
+#
+### This will initiate a shutdown after 1 second
+#
+
 def shutdown_computer():
-    # This will initiate a shutdown after 1 second
     os.system("shutdown /s /t 1")
+
+#
+### Main function
+#
 
 def main():
     user_choice = choice()
     if user_choice == 1:
-        print("Thank you for choosing to play a game with me.")
-        print("Have a good day ig.")
+        print("Aye man, i knew it all along.")
+        print("Don't go choking on cock now.")
         time.sleep(5)
         exit()
     elif user_choice == 2:
-        print("Too bad. You never had a choice. Goodbye!")
-        time.sleep(2)
+        print("Bitch stop lying")
+        time.sleep(5)
         shutdown_computer()
         exit()
 
